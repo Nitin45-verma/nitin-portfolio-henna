@@ -16,9 +16,12 @@ const itemVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
 }
 
+import GlowCursor from './GlowCursor'
+import SpecularButton from './SpecularButton'
+
 export default function Hero() {
   return (
-    <section
+    <GlowCursor
       id="hero"
       className="min-h-screen flex items-center justify-center relative overflow-hidden"
     >
@@ -74,35 +77,39 @@ export default function Hero() {
               variants={itemVariants}
               className="flex flex-wrap gap-3 sm:gap-4"
             >
-              <Link
+              <SpecularButton
+                as={Link}
                 to="projects"
                 smooth
                 duration={500}
                 offset={-72}
-                className="btn-primary cursor-pointer"
+                className="w-full sm:w-auto"
+                baseColor="#3b82f6"
               >
                 <ArrowDown size={16} />
                 View Projects
-              </Link>
-              <Link
+              </SpecularButton>
+              <SpecularButton
+                as={Link}
                 to="contact"
                 smooth
                 duration={500}
                 offset={-72}
-                className="btn-secondary cursor-pointer"
+                className="w-full sm:w-auto"
               >
                 <Send size={16} />
                 Contact
-              </Link>
-              <a
+              </SpecularButton>
+              <SpecularButton
+                as="a"
                 href="/resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary"
+                className="w-full sm:w-auto"
               >
                 <FileText size={16} />
                 Resume
-              </a>
+              </SpecularButton>
             </motion.div>
           </motion.div>
 
@@ -168,6 +175,6 @@ export default function Hero() {
           </motion.div>
         </div>
       </div>
-    </section>
+    </GlowCursor>
   )
 }

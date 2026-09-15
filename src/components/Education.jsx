@@ -4,11 +4,23 @@ import SectionHeading from './SectionHeading'
 
 const education = [
   {
-    institution: 'TIPS-G Institute',
+    institution: 'TIPS-G Institute, Vaishali Nagar, Jaipur',
     degree: 'Professional Course in Software Development',
     year: '2026',
     description:
       'Comprehensive program covering full-stack web development, data structures, database management, and software engineering principles with hands-on project-based learning.',
+  },
+  {
+    institution: 'Gandhi Government Sr. Sec. School, Bagru, Rajasthan',
+    degree: 'Senior Secondary School Examination (12th Class, RBSE)',
+    year: '2023',
+    description: 'Completed senior secondary education.',
+  },
+  {
+    institution: 'Naveen Bal Niketan Sr. Sec. School, Muhana, Jaipur',
+    degree: 'Secondary School Examination (10th Class, RBSE)',
+    year: '2020',
+    description: 'Completed secondary education.',
   },
 ]
 

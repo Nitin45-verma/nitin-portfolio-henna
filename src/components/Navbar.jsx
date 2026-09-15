@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-scroll'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
+import SpecularButton from './SpecularButton'
 
 const navLinks = [
   { to: 'about', label: 'About' },
@@ -65,14 +66,17 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <a
+          <SpecularButton
+            as="a"
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-primary ml-3 !py-2 !px-4 text-xs"
+            className="ml-3"
+            size="sm"
+            baseColor="#3b82f6"
           >
             Resume
-          </a>
+          </SpecularButton>
         </div>
 
         {/* Mobile Menu Button */}
@@ -111,14 +115,17 @@ export default function Navbar() {
                   {link.label}
                 </Link>
               ))}
-              <a
+              <SpecularButton
+                as="a"
                 href="/resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary mt-2 justify-center text-xs"
+                className="mt-2 w-full"
+                size="sm"
+                baseColor="#3b82f6"
               >
                 Resume
-              </a>
+              </SpecularButton>
             </div>
           </motion.div>
         )}

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { ExternalLink } from 'lucide-react'
 import SectionHeading from './SectionHeading'
+import SpecularButton from './SpecularButton'
 
 const projects = [
   {
@@ -78,15 +79,17 @@ export default function Projects() {
                     {project.tagline}
                   </p>
                 </div>
-                <a
+                <SpecularButton
+                  as="a"
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-secondary !py-2 !px-4 text-xs shrink-0 self-start"
+                  className="shrink-0 self-start"
+                  size="sm"
                 >
                   <ExternalLink size={14} />
                   Live Demo
-                </a>
+                </SpecularButton>
               </div>
 
               <p className="text-sm text-text-secondary leading-relaxed mb-4">

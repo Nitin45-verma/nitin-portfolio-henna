@@ -2,9 +2,9 @@ import { Mail, Heart } from 'lucide-react'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 
 const socialLinks = [
-  { icon: FaGithub, href: 'https://github.com/nitinverma', label: 'GitHub' },
-  { icon: FaLinkedinIn, href: 'https://linkedin.com/in/nitinverma', label: 'LinkedIn' },
-  { icon: Mail, href: 'mailto:nitinverma@example.com', label: 'Email', isLucide: true },
+  { icon: FaGithub, href: 'https://github.com/Nitin45-verma', label: 'GitHub' },
+  { icon: FaLinkedinIn, href: 'https://linkedin.com/in/nitin-verma-30104731a', label: 'LinkedIn' },
+  { icon: Mail, href: 'mailto:nikn63641@gmail.com', label: 'Email', isLucide: true },
 ]
 
 export default function Footer() {

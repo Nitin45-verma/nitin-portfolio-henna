@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { Mail, Phone, Send } from 'lucide-react'
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
 import SectionHeading from './SectionHeading'
+import SpecularButton from './SpecularButton'
 
 /* Wrapper to make react-icons accept size prop like Lucide */
 const wrapIcon = (Icon) => ({ size, className }) => <Icon size={size} className={className} />
@@ -11,26 +12,26 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'nitinverma@example.com',
-    href: 'mailto:nitinverma@example.com',
+    value: 'nikn63641@gmail.com',
+    href: 'mailto:nikn63641@gmail.com',
   },
   {
     icon: Phone,
     label: 'Phone',
-    value: '+91 XXXXX XXXXX',
-    href: 'tel:+91XXXXXXXXXX',
+    value: '+91 9166680296',
+    href: 'tel:+919166680296',
   },
   {
     icon: wrapIcon(FaLinkedinIn),
     label: 'LinkedIn',
-    value: 'linkedin.com/in/nitinverma',
-    href: 'https://linkedin.com/in/nitinverma',
+    value: 'linkedin.com/in/nitin-verma-30104731a',
+    href: 'https://linkedin.com/in/nitin-verma-30104731a',
   },
   {
     icon: wrapIcon(FaGithub),
     label: 'GitHub',
-    value: 'github.com/nitinverma',
-    href: 'https://github.com/nitinverma',
+    value: 'github.com/Nitin45-verma',
+    href: 'https://github.com/Nitin45-verma',
   },
 ]
 
@@ -149,10 +150,10 @@ export default function Contact() {
                 placeholder="Tell me about your project..."
               />
             </div>
-            <button type="submit" className="btn-primary w-full justify-center">
+            <SpecularButton type="submit" className="w-full" baseColor="#3b82f6">
               <Send size={16} />
               Send Message
-            </button>
+            </SpecularButton>
           </motion.form>
         </div>
       </div>
