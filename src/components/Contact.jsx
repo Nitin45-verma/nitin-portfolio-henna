@@ -48,7 +48,7 @@ export default function Contact() {
     const body = encodeURIComponent(
       `Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`
     )
-    window.open(`mailto:nitinverma@example.com?subject=${subject}&body=${body}`)
+    window.open(`mailto:nikn63641@gmail.com?subject=${subject}&body=${body}`)
   }
 
   return (
@@ -82,7 +82,7 @@ export default function Contact() {
                 className="flex items-center gap-4 group"
               >
                 <div className="p-2.5 rounded-lg bg-bg-card border border-border group-hover:border-accent/40 transition-colors">
-                  <item.icon size={18} className="text-accent" />
+                  <item.icon size={18} className="text-accent" aria-hidden="true" />
                 </div>
                 <div>
                   <p className="text-xs text-text-muted uppercase tracking-wider">
@@ -151,7 +151,7 @@ export default function Contact() {
               />
             </div>
             <SpecularButton type="submit" className="w-full" baseColor="#3b82f6">
-              <Send size={16} />
+              <Send size={16} aria-hidden="true" />
               Send Message
             </SpecularButton>
           </motion.form>

@@ -44,7 +44,7 @@ export default function Education() {
               className="card p-6 md:p-8 flex gap-5 items-start"
             >
               <div className="p-3 rounded-lg bg-accent/10 text-accent shrink-0">
-                <GraduationCap size={22} />
+                <GraduationCap size={22} aria-hidden="true" />
               </div>
               <div>
                 <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-2">

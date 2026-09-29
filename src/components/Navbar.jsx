@@ -30,7 +30,8 @@ export default function Navbar() {
   }, [mobileOpen])
 
   return (
-    <motion.nav
+    <motion.header
+      role="banner"
       initial={{ y: -80 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
@@ -38,10 +39,13 @@ export default function Navbar() {
         scrolled ? 'glass' : 'bg-transparent'
       }`}
     >
+    <nav aria-label="Main navigation">
+
       <div className="section-container flex items-center justify-between h-16 md:h-18">
         {/* Logo */}
         <Link
           to="hero"
+          href="#hero"
           smooth
           duration={600}
           offset={-80}
@@ -56,6 +60,7 @@ export default function Navbar() {
             <Link
               key={link.to}
               to={link.to}
+              href={`#${link.to}`}
               spy
               smooth
               duration={500}
@@ -104,6 +109,7 @@ export default function Navbar() {
                 <Link
                   key={link.to}
                   to={link.to}
+                  href={`#${link.to}`}
                   spy
                   smooth
                   duration={500}
@@ -130,6 +136,7 @@ export default function Navbar() {
           </motion.div>
         )}
       </AnimatePresence>
-    </motion.nav>
+    </nav>
+    </motion.header>
   )
 }

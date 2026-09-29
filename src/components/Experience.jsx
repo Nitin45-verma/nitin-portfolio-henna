@@ -53,11 +53,11 @@ export default function Experience() {
                   </div>
                   <div className="flex items-center gap-4 text-xs text-text-muted">
                     <span className="flex items-center gap-1.5">
-                      <MapPin size={13} />
+                      <MapPin size={13} aria-hidden="true" />
                       {exp.location}
                     </span>
                     <span className="flex items-center gap-1.5">
-                      <Calendar size={13} />
+                      <Calendar size={13} aria-hidden="true" />
                       {exp.period}
                     </span>
                   </div>

@@ -15,7 +15,7 @@ export default function Footer() {
           {/* Copyright */}
           <p className="text-xs text-text-muted flex items-center gap-1.5">
             © {new Date().getFullYear()} Nitin Verma. Built with
-            <Heart size={12} className="text-accent" />
+            <Heart size={12} className="text-accent" aria-hidden="true" />
           </p>
 
           {/* Social Links */}
@@ -30,9 +30,9 @@ export default function Footer() {
                 className="p-2 rounded-lg text-text-muted hover:text-accent hover:bg-accent/10 transition-all"
               >
                 {link.isLucide ? (
-                  <link.icon size={18} />
+                  <link.icon size={18} aria-hidden="true" />
                 ) : (
-                  <link.icon size={18} />
+                  <link.icon size={18} aria-hidden="true" />
                 )}
               </a>
             ))}

@@ -86,9 +86,10 @@ export default function Projects() {
                   rel="noopener noreferrer"
                   className="shrink-0 self-start"
                   size="sm"
+                  aria-label={`View ${project.title} live site`}
                 >
-                  <ExternalLink size={14} />
-                  Live Demo
+                  <ExternalLink size={14} aria-hidden="true" />
+                  View Live Site
                 </SpecularButton>
               </div>
 

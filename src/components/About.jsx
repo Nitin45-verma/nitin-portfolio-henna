@@ -66,7 +66,8 @@ export default function About() {
             <p className="text-text-secondary leading-relaxed">
               What sets me apart is my ability to bridge business requirements with scalable 
               technical architecture. I focus on writing clean, maintainable code and leveraging 
-              AI-assisted workflows to ship faster without sacrificing quality.
+              AI-assisted development workflows to ship faster without sacrificing quality — 
+              whether working remotely or on-site from Jaipur.
             </p>
           </motion.div>
 
@@ -85,7 +86,7 @@ export default function About() {
                 className="card p-5 flex gap-4 items-start"
               >
                 <div className="p-2.5 rounded-lg bg-accent/10 text-accent shrink-0">
-                  <item.icon size={20} />
+                  <item.icon size={20} aria-hidden="true" />
                 </div>
                 <div>
                   <h3 className="text-sm font-semibold text-text-primary mb-1">

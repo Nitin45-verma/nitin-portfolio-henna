@@ -1,0 +1,21 @@
+{
+  "name": "Nitin Verma — Full Stack MERN Developer",
+  "short_name": "Nitin Verma",
+  "description": "Portfolio of Nitin Verma, a Full Stack MERN Developer based in Jaipur, India.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0f0f",
+  "theme_color": "#c9a84c",
+  "icons": [
+    {
+      "src": "/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
